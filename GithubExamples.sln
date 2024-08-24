@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubExamples", "GithubExa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{194D6BB3-0E3D-4C67-8115-C21512524332}"
 	ProjectSection(SolutionItems) = preProject
+		multi-event.yml = multi-event.yml
 		.github\workflows\Schedul.yml = .github\workflows\Schedul.yml
 	EndProjectSection
 EndProject
