@@ -1,0 +1,32 @@
+name: CI manual event
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'name of the person to greet'
+        required: true
+        type: string
+      greeting:
+        description: 'type of greeting'
+        required: true
+        type: string
+      data:
+        description: 'Base64 encoded content of a file'
+        required: false
+        type: string
+
+jobs:
+  greet: # Job name
+    runs-on: ubuntu-latest # Specifies the type of runner (Ubuntu machine) on which the job will run
+    steps:
+      - name: Decode File Content # Step 1: Decode base64-encoded input
+        run: |
+          echo "${{ inputs.data }}" | base64 --decode > ./decoded_file.txt
+      - name: Display Greeting # Step 2: Display a greeting message
+        run: |
+          echo "${{ inputs.greeting }}, ${{ inputs.name }}!"
+      - name: Display File Content # Step 3: Display the contents of the decoded file
+        run: |
+          echo "Contents of the file:"
+          cat ./decoded_file.txt
