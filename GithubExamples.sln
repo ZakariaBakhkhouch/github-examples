@@ -5,6 +5,12 @@ VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubExamples", "GithubExamples\GithubExamples.csproj", "{878187BC-905F-47C5-BFC6-D8D53ABD88A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6C5D03E-E852-4AE5-A828-846DC37B7369}"
+	ProjectSection(SolutionItems) = preProject
+		multi-event.yml = multi-event.yml
+		.github\workflows\schedule.yml = .github\workflows\schedule.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
