@@ -7,13 +7,13 @@ on:
       - dev
   pull_request:
     branches:
-      main
+      - main
 
 jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo basic information 
+      - name: Echo basic information
         run: |
           echo "Job ID: $GITHUB_JOB"
           echo "Action: $GITHUB_ACTION"
