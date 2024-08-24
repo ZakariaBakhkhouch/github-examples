@@ -1,12 +1,12 @@
-name: CI manual event
+name: CI manual event # workflow name
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows the workflow to be manually triggered
     inputs:
-      name:
-        description: 'name of the person to greet'
-        required: true
-        type: string
+      name: # Input variable 'name'
+        description: 'name of the person to greet' # Description for the 'name' input
+        required: true # Indicates that this input is required
+        type: string  # Specifies the input type as a string
       greeting:
         description: 'type of greeting'
         required: true
