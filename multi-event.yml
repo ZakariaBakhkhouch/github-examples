@@ -10,11 +10,11 @@ on:
       main
 
 jobs:
-  name: hello world
-  runs_on: ubuntu-latest
-  steps:
-    name: "Echo basic information."
-    run: |
-      echo "Job ID: $GITHUB_JOB"
-      echo "Action: $GITHUB_ACTION"
-      echo "Actor: $GITHUB_ACTOR"
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo basic information 
+        run: |
+          echo "Job ID: $GITHUB_JOB"
+          echo "Action: $GITHUB_ACTION"
+          echo "Actor: $GITHUB_ACTOR"
